@@ -161,6 +161,7 @@ textarea {
 .for-checkbox label {
     display: block;
     padding-bottom: 4px;
+    cursor: pointer;
 }
 
 .for-radio label p,
@@ -170,9 +171,9 @@ textarea {
     font-weight: normal;
 }
 
-.for-radio label:hover input:not(:checked) + .input-toggle-component,
-.for-checkbox label:hover input:not(:checked) + .input-toggle-component {
-    border-color: #dfe1e3;
+.for-radio label:hover p,
+.for-checkbox label:hover p {
+    color: var(--midgrey);
 }
 
 .for-radio input,
@@ -197,6 +198,9 @@ textarea {
     background: #f7f7f7;
 }
 
+.for-checkbox label:hover input:not(:checked) + .input-toggle-component,
+.for-radio label:hover input:not(:checked) + .input-toggle-component {
+    border-color: var(--lightgrey);
 }
 
 .for-checkbox .input-toggle-component {
