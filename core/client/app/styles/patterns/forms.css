@@ -165,6 +165,7 @@ textarea {
 
 .for-radio label p,
 .for-checkbox label p {
+    overflow: auto;
     color: #000;
     font-weight: normal;
 }
@@ -196,11 +197,6 @@ textarea {
     background: #f7f7f7;
 }
 
-.for-radio p,
-.for-checkbox p {
-    overflow: auto;
-    color: #b3b2a8;
-    font-weight: normal;
 }
 
 .for-checkbox .input-toggle-component {
