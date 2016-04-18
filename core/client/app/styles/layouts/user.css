@@ -215,3 +215,116 @@
     opacity: 0;
     transition: opacity 0.3s ease;
 }
+
+/* User theme settings
+/* ---------------------------------------------------------- */
+
+.theme-options {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: -20px;
+}
+.theme-options .form-group {
+    flex-basis: 200px;
+    margin-left: 20px;
+}
+.theme-option {
+    position: absolute;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    margin: -1px;
+    padding: 0;
+    width: 1px;
+    height: 1px;
+    border: 0;
+}
+
+.theme-option + label {
+    position: relative;
+    display: block;
+    padding: 15px;
+    border: 1px solid #dfe1e3;
+    border-radius: var(--border-radius);
+    transition: all 0.1s ease;
+}
+
+.theme-option + label:hover {
+    background: rgba(0,20,60,0.03);
+    cursor: pointer;
+}
+
+.theme-option:checked + label {
+    background: rgba(0,20,60,0.03);
+}
+
+.theme-option + label img {
+    margin-bottom: 10px;
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+
+/*************************
+/****** Slack Theme ******
+/*************************/
+
+.gh-nav-theme-slack {
+    border-color: #4d394b;
+    background-color: #4d394b;
+}
+.gh-nav-theme-slack .gh-nav-list a,
+.gh-nav-theme-slack .gh-nav-list a i {
+    color: #ab9ba9;
+}
+.gh-nav-theme-slack .gh-nav-list a:hover {
+    background-color: #3e313c;
+    color: #ab9ba9;
+}
+.gh-nav-theme-slack .gh-nav-list a:hover i {
+    color: #ab9ba9;
+}
+.gh-nav-theme-slack .gh-nav-list a.active {
+    background-color: #4f9689;
+    color: white;
+}
+.gh-nav-theme-slack .gh-nav-list a.active i {
+    color: white;
+}
+.gh-nav-theme-slack .gh-input {
+    border-color: #3e313c;
+    background-color: #644a61;
+}
+.gh-nav-theme-slack .gh-input::-webkit-input-placeholder {
+    color: rgba(255,255,255,0.5);
+}
+
+.gh-nav-theme-slack .icon-search:before {
+    color: white;
+}
+.gh-nav-theme-slack .gh-nav-footer {
+    border-color: #3e313c;
+}
+.gh-nav-theme-slack .gh-nav-menu i {
+    color: #ab9ba9;
+}
+.gh-nav-theme-slack .gh-nav-menu-details-blog {
+    color: white;
+}
+.gh-nav-theme-slack .gh-nav-menu-details-user {
+    color: #ab9ba9;
+}
+.gh-nav-theme-slack .gh-nav-list-h {
+    color: #ab9ba9;
+}
+
+.gh-nav-theme-slack .gh-help-menu {
+    border-color: #ab9ba9;
+}
+.gh-nav-theme-slack .gh-nav-footer-sitelink {
+    color: #ab9ba9;
+}
+.gh-nav-theme-slack .gh-help-button {
+    color: #ab9ba9;
+}
